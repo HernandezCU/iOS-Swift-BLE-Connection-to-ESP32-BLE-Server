@@ -83,7 +83,6 @@
 		AEEAD8C8297602E900F940AD = {
 			isa = PBXGroup;
 			children = (
-				AEEAD9072976046D00F940AD /* DiscoveredPeripheral.swift */,
 				AEEAD8D3297602E900F940AD /* SensorESP32 */,
 				AEEAD8ED297602EC00F940AD /* SensorESP32Tests */,
 				AEEAD8F7297602EC00F940AD /* SensorESP32UITests */,
@@ -104,12 +103,10 @@
 		AEEAD8D3297602E900F940AD /* SensorESP32 */ = {
 			isa = PBXGroup;
 			children = (
-				AEEAD8D4297602E900F940AD /* AppDelegate.swift */,
-				AEEAD8D6297602E900F940AD /* SceneDelegate.swift */,
-				AEEAD8D8297602E900F940AD /* ViewController.swift */,
-				AEEAD8DA297602E900F940AD /* Main.storyboard */,
+				AEEAD90B297616B300F940AD /* Storyboards */,
+				AEEAD90A297616A000F940AD /* App Delagates */,
+				AEEAD9092976169300F940AD /* VCs */,
 				AEEAD8E0297602EC00F940AD /* Assets.xcassets */,
-				AEEAD8E2297602EC00F940AD /* LaunchScreen.storyboard */,
 				AEEAD8E5297602EC00F940AD /* Info.plist */,
 				AEEAD8DD297602EA00F940AD /* SensorESP32.xcdatamodeld */,
 			);
@@ -131,6 +128,33 @@
 				AEEAD8FA297602EC00F940AD /* SensorESP32UITestsLaunchTests.swift */,
 			);
 			path = SensorESP32UITests;
+			sourceTree = "<group>";
+		};
+		AEEAD9092976169300F940AD /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				AEEAD8D8297602E900F940AD /* ViewController.swift */,
+				AEEAD9072976046D00F940AD /* DiscoveredPeripheral.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		AEEAD90A297616A000F940AD /* App Delagates */ = {
+			isa = PBXGroup;
+			children = (
+				AEEAD8D4297602E900F940AD /* AppDelegate.swift */,
+				AEEAD8D6297602E900F940AD /* SceneDelegate.swift */,
+			);
+			path = "App Delagates";
+			sourceTree = "<group>";
+		};
+		AEEAD90B297616B300F940AD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AEEAD8DA297602E900F940AD /* Main.storyboard */,
+				AEEAD8E2297602EC00F940AD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
