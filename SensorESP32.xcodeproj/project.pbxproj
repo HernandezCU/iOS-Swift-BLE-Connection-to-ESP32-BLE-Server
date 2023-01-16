@@ -17,6 +17,7 @@
 		AEEAD8EF297602EC00F940AD /* SensorESP32Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAD8EE297602EC00F940AD /* SensorESP32Tests.swift */; };
 		AEEAD8F9297602EC00F940AD /* SensorESP32UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAD8F8297602EC00F940AD /* SensorESP32UITests.swift */; };
 		AEEAD8FB297602EC00F940AD /* SensorESP32UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAD8FA297602EC00F940AD /* SensorESP32UITestsLaunchTests.swift */; };
+		AEEAD9082976046D00F940AD /* DiscoveredPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAD9072976046D00F940AD /* DiscoveredPeripheral.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		AEEAD8F4297602EC00F940AD /* SensorESP32UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensorESP32UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEAD8F8297602EC00F940AD /* SensorESP32UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorESP32UITests.swift; sourceTree = "<group>"; };
 		AEEAD8FA297602EC00F940AD /* SensorESP32UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorESP32UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AEEAD9072976046D00F940AD /* DiscoveredPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveredPeripheral.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		AEEAD8C8297602E900F940AD = {
 			isa = PBXGroup;
 			children = (
+				AEEAD9072976046D00F940AD /* DiscoveredPeripheral.swift */,
 				AEEAD8D3297602E900F940AD /* SensorESP32 */,
 				AEEAD8ED297602EC00F940AD /* SensorESP32Tests */,
 				AEEAD8F7297602EC00F940AD /* SensorESP32UITests */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEEAD9082976046D00F940AD /* DiscoveredPeripheral.swift in Sources */,
 				AEEAD8D9297602E900F940AD /* ViewController.swift in Sources */,
 				AEEAD8D5297602E900F940AD /* AppDelegate.swift in Sources */,
 				AEEAD8D7297602E900F940AD /* SceneDelegate.swift in Sources */,
@@ -444,11 +448,13 @@
 				DEVELOPMENT_TEAM = KDWC62685W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SensorESP32/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = test;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,9 +462,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hernandezcu.SensorESP32;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,11 +481,13 @@
 				DEVELOPMENT_TEAM = KDWC62685W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SensorESP32/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = test;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,9 +495,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hernandezcu.SensorESP32;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
